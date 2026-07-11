@@ -937,10 +937,26 @@
     transform: rotate(180deg);
   }
 
-  /* Adjust theme toggle for mobile menu spacing */
-  .nav-cta .theme-toggle {
+  /* Position theme toggle and hamburger on the same horizontal axis inside active drawer */
+  nav.mobile-active .theme-toggle {
+    position: fixed !important;
+    top: 24px !important;
+    right: 230px !important;
+    width: 36px !important;
+    height: 36px !important;
+    z-index: 1001 !important;
     margin: 0 !important;
-    align-self: center !important;
+    display: inline-flex !important;
+  }
+  
+  nav.mobile-active .nav-toggle {
+    position: fixed !important;
+    top: 24px !important;
+    right: 24px !important;
+    width: 36px !important;
+    height: 36px !important;
+    z-index: 1001 !important;
+    margin: 0 !important;
   }
 }
 
