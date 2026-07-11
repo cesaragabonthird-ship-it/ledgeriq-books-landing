@@ -489,22 +489,23 @@
       gap: 12px;
       margin-top: 16px;
     }
-    .mobile-cta .btn {
+    .nav-links .mobile-cta a.btn {
       width: 100% !important;
-      justify-content: center;
-      padding: 12px 20px;
-      font-size: 15px;
-      border-radius: 999px;
+      justify-content: center !important;
+      padding: 12px 20px !important;
+      font-size: 15px !important;
+      border-radius: 999px !important;
       display: inline-flex !important;
+      border-bottom: none !important;
     }
-    .mobile-cta .btn-ghost {
-      color: var(--text-hi);
-      border-color: var(--border-strong);
-      background: transparent;
+    .nav-links .mobile-cta a.btn-ghost {
+      color: var(--text-hi) !important;
+      border: 1px solid var(--border-strong) !important;
+      background: transparent !important;
     }
-    .mobile-cta .btn-primary {
-      background: var(--blue);
-      color: #fff;
+    .nav-links .mobile-cta a.btn-primary {
+      background: var(--blue) !important;
+      color: #fff !important;
     }
     
     /* Nav CTA sizing & display on mobile */
