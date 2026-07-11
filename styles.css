@@ -129,6 +129,7 @@
   .nav-links{display:flex;gap:34px;align-items:center;}
   .nav-links a{font-size:14.5px;color:var(--text-mid);font-weight:500;transition:color .2s;}
   .nav-links a:hover{color:var(--text-hi);}
+  .mobile-cta{display:none;}
   .nav-cta{display:flex;gap:12px;align-items:center;}
   .nav-toggle{display:none;background:none;border:none;color:var(--text-hi);}
 
@@ -481,6 +482,30 @@
     .nav-links .dropdown.mobile-expanded .dropdown-arrow {
       transform: rotate(180deg);
     }
+    .mobile-cta {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .mobile-cta .btn {
+      width: 100% !important;
+      justify-content: center;
+      padding: 12px 20px;
+      font-size: 15px;
+      border-radius: 999px;
+      display: inline-flex !important;
+    }
+    .mobile-cta .btn-ghost {
+      color: var(--text-hi);
+      border-color: var(--border-strong);
+      background: transparent;
+    }
+    .mobile-cta .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
     
     /* Nav CTA sizing & display on mobile */
     .nav-cta {
@@ -488,6 +513,10 @@
       align-items: center;
       gap: 12px;
       order: 9;
+    }
+    .nav-cta .theme-toggle {
+      width: 40px;
+      height: 40px;
     }
     .nav-cta .btn {
       padding: 8px 14px;
