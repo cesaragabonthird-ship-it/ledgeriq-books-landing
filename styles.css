@@ -580,6 +580,10 @@
   .big-wordmark-wrap a{display:block;}
   .big-wordmark-wrap img{width:100%;height:auto;max-height:190px;object-fit:contain;display:block;margin:0 auto;
     filter:drop-shadow(0 30px 70px rgba(21,93,252,0.18));transition:filter .3s;}
+  .big-wordmark-wrap .logo-light { display: none !important; }
+  .big-wordmark-wrap .logo-dark { display: block !important; }
+  [data-theme="light"] .big-wordmark-wrap .logo-light { display: block !important; }
+  [data-theme="light"] .big-wordmark-wrap .logo-dark { display: none !important; }
   .footer-tagline{max-width:520px;margin:0 auto 40px;font-size:15px;color:var(--text-mid);line-height:1.6;}
   .footer-bottom-bar{
     display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
