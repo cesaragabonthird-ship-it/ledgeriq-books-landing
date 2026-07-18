@@ -23,13 +23,6 @@
     <div class="orb orb-green"></div>
   </div>
 
-  <!-- Announcement Bar -->
-  <div class="promo-bar">
-    <span class="promo-badge">Early User Offer</span>
-    <span>Use code <span class="promo-code">LIFETIME90PROMO</span> for a lifetime discount! Limited to the first 1,000 subscriptions.</span>
-    <a href="pricing.html">Get Started &rarr;</a>
-  </div>
-
   <header>
     <nav>
       <a href="index.html" class="logo">
@@ -369,6 +362,33 @@
       setTheme(isLight ? 'dark' : 'light');
     });
   </script>
+
+  <!-- Centered Promo Modal -->
+  <div class="promo-modal-backdrop" id="promoModal">
+    <div class="promo-modal-card">
+      <div class="promo-modal-header">
+        <span class="promo-modal-badge">Early User Offer</span>
+        <button class="promo-modal-close" onclick="document.getElementById('promoModal').style.display='none'" aria-label="Close promo notice">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <h2 class="promo-modal-title">Get Lifetime Access</h2>
+      <div class="promo-modal-body">
+        Subscribe today and apply the coupon code below to unlock a lifetime discount.
+        <div class="promo-modal-code-wrapper">
+          <span class="promo-modal-code-label">Coupon Code</span>
+          <span class="promo-modal-code">LIFETIME90PROMO</span>
+        </div>
+      </div>
+      <div class="promo-modal-action">
+        <a href="pricing.html" class="promo-modal-btn" onclick="document.getElementById('promoModal').style.display='none'">Claim Discount Now</a>
+        <span class="promo-modal-limit">Limited to the first 1,000 subscriptions</span>
+      </div>
+    </div>
+  </div>
 
 </body>
 
